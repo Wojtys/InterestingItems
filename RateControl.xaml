@@ -1,0 +1,117 @@
+﻿<UserControl
+    x:Class="RejestracjaPacjenta.Controls.RateControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RejestracjaPacjenta.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="100"
+    d:DesignWidth="400">
+
+    <Grid Background="Transparent"
+          Width="70"
+          Margin="10,0">
+        <Grid x:Name="EmptyStarGrid"
+              Margin="0,0,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <BitmapIcon Height="10"
+                            Width="10"
+                            UriSource="{Binding UriSource, Source={StaticResource StarFilledIcon}}"
+                            Opacity="0.5"
+                            Foreground="{ThemeResource NavigationBarColor}"
+                            Margin="2"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <BitmapIcon Height="10"
+                            Width="10"
+                            UriSource="{Binding UriSource, Source={StaticResource StarFilledIcon}}"
+                            Opacity="0.5"
+                            Foreground="{ThemeResource NavigationBarColor}"
+                            Margin="2"/>
+            </Grid>
+            <Grid Grid.Column="2">
+                <BitmapIcon Height="10"
+                            Width="10"
+                            UriSource="{Binding UriSource, Source={StaticResource StarFilledIcon}}"
+                            Opacity="0.5"
+                            Foreground="{ThemeResource NavigationBarColor}"
+                            Margin="2"/>
+            </Grid>
+            <Grid Grid.Column="3">
+                <BitmapIcon Height="10"
+                            Width="10"
+                            UriSource="{Binding UriSource, Source={StaticResource StarFilledIcon}}"
+                            Opacity="0.5"
+                            Foreground="{ThemeResource NavigationBarColor}"
+                            Margin="2"/>
+            </Grid>
+            <Grid Grid.Column="4">
+                <BitmapIcon Height="10"
+                            Width="10"
+                            UriSource="{Binding UriSource, Source={StaticResource StarFilledIcon}}"
+                            Opacity="0.5"
+                            Foreground="{ThemeResource NavigationBarColor}"
+                            Margin="2"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="FilledStarGrid"
+              Margin="{Binding RightMargin, ElementName=StarControls}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Visibility="Collapsed">
+                <BitmapIcon Height="10"
+                            Width="10"
+                            UriSource="{Binding UriSource, Source={StaticResource StarFilledIcon}}"
+                            Foreground="{ThemeResource NavigationBarColor}"
+                            Tag="1"
+                            Margin="2"/>
+            </Grid>
+            <Grid Grid.Column="1" Visibility="Collapsed">
+                <BitmapIcon Height="10"
+                        Width="10"
+                        UriSource="{Binding UriSource, Source={StaticResource StarFilledIcon}}"
+                        Foreground="{ThemeResource NavigationBarColor}"
+                        Tag="2"
+                        Margin="2"/>
+            </Grid>
+            <Grid Grid.Column="2" Visibility="Collapsed">
+                <BitmapIcon Height="10"
+                        Width="10"
+                        UriSource="{Binding UriSource, Source={StaticResource StarFilledIcon}}"
+                        Foreground="{ThemeResource NavigationBarColor}"
+                        Tag="3"
+                        Margin="2"/>
+            </Grid>
+            <Grid Grid.Column="3" Visibility="Collapsed">
+                <BitmapIcon Height="10"
+                        Width="10"
+                        UriSource="{Binding UriSource, Source={StaticResource StarFilledIcon}}"
+                        Foreground="{ThemeResource NavigationBarColor}"
+                        Tag="4"
+                        Margin="2"/>
+            </Grid>
+            <Grid Grid.Column="4" Visibility="Collapsed">
+                <BitmapIcon Height="10"
+                        Width="10"
+                        UriSource="{Binding UriSource, Source={StaticResource StarFilledIcon}}"
+                        Foreground="{ThemeResource NavigationBarColor}"
+                        Tag="5"
+                        Margin="2"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</UserControl>
